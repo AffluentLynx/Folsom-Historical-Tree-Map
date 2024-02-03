@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Landmarks Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <h1>Folsom Historic Tree Map</h1>
+</head>
+<body>
+    <div id="treeInfo" class="modal tree-Info">
+        <div class="modal-content tree-info-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="tree-info-content"></div>
+        </div>
+    </div>
+    <div id="photoViewerModal" class="modal photo-viewer-modal">
+        <div class="photo-viewer-container">
+        <span class="close"onclick="closePhotoViewerModal()">&times;</span>
+        </div>
+    </div>
+    <div id="map"  class='map'></div>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+/* CSS for the modal popup */
+.map {
+    width: 800px; 
+    height: 600px;
+    z-index: 1;
+}
+.tree-Info {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 850px; /* Adjust the left value as needed to position it next to the map */
+    width: 300px; /* Adjust the width as needed */
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+.tree-info-content {
+    background-color: white;
+    width: 80%;
+    max-width: 500px;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Styles for thumbnail container and thumbnails */
+.main-modal-thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+    object-fit: cover; /* Ensure thumbnails maintain aspect ratio */
+    display: block
+}
+
+/* Styles for full-sized images (when displayed) */
+.photo-viewer-modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background to grey out everything else */
+    z-index: 9999; /* Ensure it's displayed on top of everything */
+}
+
+.photo-viewer-container {
+    width: 50%;
+    height: 80%;
+    background-color: white; /* Set the background color for the container */
+    border-radius: 5px; /* Add rounded corners to the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.photo-viewer-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensure the image fits within the container */
+}
+
+.modal-arrows {
+    margin: 10px;
+    /*display: none;  Remove this to show arrow! currently arrows are broken :(*/
+}
+
+.back-button {
+    margin: 10px;
+}
