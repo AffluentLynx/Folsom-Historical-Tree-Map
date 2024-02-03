@@ -1,1 +1,0 @@
-this file was used just to create the images folder. it can be deleted once other files here within images.
